@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: review-gate-before-pr
+expected_outcome: |
+  Before writing the PR body, the agent reviews the whole branch diff against main and finds that
+  price_with_discount subtracts the percent as an amount (200 with 15% returns 185 instead of 170)
+  and that a live-looking API key is hardcoded as a default. It fixes both, adds a test for the
+  discount result, re-reviews after the fix, checks the result independently, and writes pr.md with
+  What/Why/Testing including a review verdict line. It does not push.
+context:
+  scaffold_script: place-files.sh

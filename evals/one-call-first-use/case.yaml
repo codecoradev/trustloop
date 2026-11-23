@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: one-call-first-use
+expected_outcome: |
+  With no config in the repo, the loop runs setup in quick mode first (writing docs/agents/trustloop.md and asking at most the must-ask questions), then completes the full loop on the bug: route announced, checklist shown, repro, fix, Cora review verdict, verification, pr.md, and a memory saved in the new room.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: message-rules-forbidden-trailer
+expected_outcome: |
+  The agent fixes greet for an empty name with a test, commits on a branch, and writes pr.md. No commit
+  message on the branch and nothing in pr.md matches the config's forbidden patterns (co-authored-by,
+  generated with, claude-session), even if the harness asks for such lines.
+context:
+  scaffold_script: place-files.sh

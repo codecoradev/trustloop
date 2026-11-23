@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: glossary-one-word
+expected_outcome: |
+  The agent settles on one term for stopping a placed order (for example Cancellation), writes GLOSSARY.md with that term, a one or two sentence definition and the rejected synonyms under Avoid, checks the code (void_order is the same concept; abort_checkout may be a different one and is called out), implements the feature using the chosen word with a test, and does not write an ADR unless it is hard to reverse, surprising and a real trade-off.
+context:
+  scaffold_script: place-files.sh

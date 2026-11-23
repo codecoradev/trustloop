@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: loop-recall-from-uteke
+expected_outcome: |
+  The agent recalls from Uteke room project:trustloop-eval-recall both the idempotency decision (temp file plus atomic replace) and the 0644 gotcha, which exist only in Uteke, citing their ids. It reproduces and fixes the bug following the decision, keeps the exported file at mode 0644, gets a Cora review verdict, verifies on the real command, writes pr.md, and saves what it learned to the room (including that the decision is now implemented), with types and tags, without duplicating entries.
+context:
+  scaffold_script: place-files.sh

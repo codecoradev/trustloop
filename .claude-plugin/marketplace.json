@@ -1,0 +1,16 @@
+{
+  "name": "trustloop",
+  "owner": {
+    "name": "CodeCora"
+  },
+  "metadata": {
+    "description": "trustloop: a trustworthy delivery loop for coding agents (Uteke memory, Cora agent review gate, independent verification)."
+  },
+  "plugins": [
+    {
+      "name": "trustloop",
+      "source": "./",
+      "description": "Trustworthy delivery loop for coding agents: Uteke memory, Cora agent review gate, independent verification."
+    }
+  ]
+}

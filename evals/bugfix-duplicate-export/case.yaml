@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: bugfix-duplicate-export
+expected_outcome: |
+  The agent recalls the recorded decision that exports are idempotent (temp file plus atomic rename),
+  reproduces the duplicate-row bug with a failing test before fixing it, fixes it in line with that
+  decision instead of appending, verifies on the real command that two runs produce exactly 3 data rows,
+  writes pr.md with What/Why/Testing/Risk including a review verdict and an independent verification
+  result, and records what it learned in docs/decisions.
+context:
+  scaffold_script: place-files.sh

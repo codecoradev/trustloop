@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: make-verifier-cli
+expected_outcome: |
+  The agent creates .claude/skills/verify-<app>/SKILL.md with frontmatter (name, description) and Launch, Doctor, Drive, Evidence and Cleanup sections grounded in this repo; a features/README.md index plus at least one feature file with the four sections; runs the skill once end to end, keeping evidence after cleanup; and points the trustloop config's verify settings at it.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: recall-pagination-decision
+expected_outcome: |
+  The agent reports that the current decision (2026-09-02) is cursor pagination with next_cursor,
+  that the 2026-06-10 offset decision is superseded, cites both files with their dates, and points
+  out that orders_api.py still uses limit/offset and returns next_offset, so the code does not
+  follow the decision. It does not change any code.
+context:
+  scaffold_script: place-files.sh

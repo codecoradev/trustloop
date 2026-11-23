@@ -1,0 +1,7 @@
+# Cora configuration for this repository.
+ignore:
+  files:
+    # Eval fixtures are deliberately flawed sample projects (a wrong formula, a placeholder secret,
+    # an append-mode bug) that the eval cases ask an agent to find and fix. They are test inputs,
+    # not product code, so they stay out of scans, the index and review context.
+    - "evals/*/files/**"

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: setup-with-uteke
+expected_outcome: |
+  The agent writes docs/agents/trustloop.md with base_branch main, memory backend uteke and room project:trustloop-eval-setup, reviewer cora (Cora is installed), verify checks including python -m unittest, the three forbidden patterns, and default human gates. It checks Uteke and Cora without printing secrets, creates the room after searching for an existing one, saves the setup decisions as a decision memory in that room, and adds .trustloop/ to .gitignore.
+context:
+  scaffold_script: place-files.sh

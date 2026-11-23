@@ -1,0 +1,28 @@
+{
+  "name": "trustloop",
+  "version": "0.4.0",
+  "description": "A delivery loop for coding agents you can trust: recall project memory (Uteke), set a checkable finish condition, build in small verified units, gate every PR on an agent review (Cora), verify with a second agent that did not write the code, and remember what was decided. Degrades gracefully without Uteke or Cora.",
+  "author": {
+    "name": "CodeCora"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "workflow",
+    "code-review",
+    "memory",
+    "verification",
+    "uteke",
+    "cora",
+    "agents"
+  ],
+  "skills": [
+    "./skills/loop",
+    "./skills/setup",
+    "./skills/recall",
+    "./skills/glossary",
+    "./skills/review-gate",
+    "./skills/verify",
+    "./skills/make-verifier",
+    "./skills/remember"
+  ]
+}
